@@ -12,14 +12,14 @@
 
 .icon {
   aspect-ratio: 1 / 1;
-  width: 50px;
+  width: 40px;
 }
 
 .stats {
   display: flex;
   flex-direction: column;
   flex: 5 0 0;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 0px 10px;
 }
 
