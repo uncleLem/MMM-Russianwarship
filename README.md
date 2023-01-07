@@ -4,6 +4,8 @@
 
 The total losses of the russian occupier since the full scale invasion in Ukraine, per General Staff of the Armed Forces of Ukraine.
 
+![image](img/example.png)
+
 ## Usage
 
 To use this module, go to the *modules* subfolder of your mirror and clone this repository.
