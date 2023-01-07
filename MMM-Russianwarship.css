@@ -1,0 +1,37 @@
+.stats-main-container {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+}
+.stats-container {
+  display: flex;
+  flex: 0 0 50%;
+}
+
+.icon {
+  aspect-ratio: 1 / 1;
+  width: 50px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  flex: 5 0 0;
+  justify-content: space-around;
+  padding: 0px 10px;
+}
+
+.stats-item {
+}
+
+.stats-numbers {
+}
+
+.stats-increase {
+  color: red;
+}
+
+.stats-description {
+}

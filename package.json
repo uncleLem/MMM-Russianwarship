@@ -1,0 +1,25 @@
+{
+  "name": "MMM-Russianwarship",
+  "version": "1.0.0",
+  "description": "Russian losses in Ukraine for the Magic Mirror2.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uncleLem/MMM-Russianwarship.git"
+  },
+  "keywords": [
+    "MagicMirror",
+    "Russian invasion"
+  ],
+  "author": "Serhii Khokhlov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uncleLem/MMM-Russianwarship/issues"
+  },
+  "homepage": "https://github.com/uncleLem/MMM-Russianwarship#readme",
+  "dependencies": {
+    "request": "~2.83.0"
+  },
+  "devDependencies": {
+    "request": "latest"
+  }
+}

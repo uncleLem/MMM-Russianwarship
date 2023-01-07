@@ -1,0 +1,16 @@
+{
+	"personnel_units": "Особовий склад",
+	"tanks": "Танки",
+	"armoured_fighting_vehicles": "ББМ",
+	"artillery_systems": "Артилерійські системи",
+	"mlrs": "РСЗВ",
+	"aa_warfare_systems": "Системи ППО",
+	"planes": "Літаки",
+	"helicopters": "Гелікоптери",
+	"vehicles_fuel_tanks": "Автотехніка та цистерни",
+	"warships_cutters": "Кораблі та катери",
+	"uav_systems": "БПЛА",
+	"special_military_equip": "Спец. техніка",
+	"atgm_srbm_systems": "Установки ОТРК/ТРК",
+	"cruise_missiles": "Крилаті ракети"
+}

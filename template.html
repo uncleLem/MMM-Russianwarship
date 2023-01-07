@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="MMM-Russianwarship.css">
+</head>
+<body>
+
+<div class="stats-main-container">
+  <div class = "row">
+    <div class="stats-container">
+
+      <img class="icon" src="img/icon-people.svg">
+
+      <div class="stats">
+        <div class="stats-item stats-numbers bright medium">{{ data.stats['personnel_units'] }}&nbsp;<span class="stats-increase bold">{{ data.increase['personnel_units'] | getLoss }}</span></div>
+
+        <div class="stats-item stats-description small dimmed">{{ "personnel_units" | translate }}</div>
+
+      </div>
+    </div>
+
+    <div class="stats-container">
+
+      <img class="icon" src="img/icon-tank.svg">
+
+      <div class="stats">
+        <div class="stats-item stats-numbers normal medium">{{ data.stats['tanks'] }} <span class="stats-increase bold">{{ data.increase['tanks'] | getLoss }}</span></div>
+
+        <div class="stats-item stats-description small dimmed">{{ "tanks" | translate }}</div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class = "row">
+    <div class="stats-container">
+
+      <img class="icon" src="img/icon-bbm.svg">
+
+      <div class="stats">
+        <div class="stats-item stats-numbers normal medium">{{ data.stats['armoured_fighting_vehicles'] }} <span class="stats-increase bold">{{ data.increase['armoured_fighting_vehicles'] | getLoss }}</span></div>
+
+        <div class="stats-item stats-description small dimmed">{{ "armoured_fighting_vehicles" | translate }}</div>
+
+      </div>
+    </div>
+    <div class="stats-container">
+
+      <img class="icon" src="img/icon-art.svg">
+
+      <div class="stats">
+        <div class="stats-item stats-numbers normal medium">{{ data.stats['artillery_systems'] }} <span class="stats-increase bold">{{ data.increase['artillery_systems'] | getLoss }}</span></div>
+
+        <div class="stats-item stats-description small dimmed">{{ "artillery_systems" | translate }}</div>
+
+      </div>
+    </div>
+  </div>
+  <div class = "row">
+    <div class="stats-container">
+
+      <img class="icon" src="img/icon-rszv.svg">
+
+      <div class="stats">
+        <div class="stats-item stats-numbers normal medium">{{ data.stats['mlrs'] }} <span class="stats-increase bold">{{ data.increase['mlrs'] | getLoss }}</span></div>
+
+        <div class="stats-item stats-description small dimmed">{{ "mlrs" | translate }}</div>
+
+      </div>
+    </div>
+    <div class="stats-container">
+
+      <img class="icon" src="img/icon-ppo.svg">
+
+      <div class="stats">
+        <div class="stats-item stats-numbers normal medium">{{ data.stats['aa_warfare_systems'] }} <span class="stats-increase bold">{{ data.increase['aa_warfare_systems'] | getLoss }}</span></div>
+
+        <div class="stats-item stats-description small dimmed">{{ "aa_warfare_systems" | translate }}</div>
+
+      </div>
+    </div>
+  </div>
+  <div class = "row">
+    <div class="stats-container">
+
+      <img class="icon" src="img/icon-plane.svg">
+
+      <div class="stats">
+        <div class="stats-item stats-numbers normal medium">{{ data.stats['planes'] }} <span class="stats-increase bold">{{ data.increase['planes'] | getLoss }}</span></div>
+
+        <div class="stats-item stats-description small dimmed">{{ "planes" | translate }}</div>
+
+      </div>
+    </div>
+    <div class="stats-container">
+
+      <img class="icon" src="img/icon-helicopter.svg">
+
+      <div class="stats">
+        <div class="stats-item stats-numbers normal medium">{{ data.stats['helicopters'] }} <span class="stats-increase bold">{{ data.increase['helicopters'] | getLoss }}</span></div>
+
+        <div class="stats-item stats-description small dimmed">{{ "helicopters" | translate }}</div>
+
+      </div>
+    </div>
+  </div>
+  <div class = "row">
+    <div class="stats-container">
+
+      <img class="icon" src="img/icon-auto.svg">
+
+      <div class="stats">
+        <div class="stats-item stats-numbers normal medium">{{ data.stats['vehicles_fuel_tanks'] }} <span class="stats-increase bold">{{ data.increase['vehicles_fuel_tanks'] | getLoss }}</span></div>
+
+        <div class="stats-item stats-description small dimmed">{{ "vehicles_fuel_tanks" | translate }}</div>
+
+      </div>
+    </div>
+    <div class="stats-container">
+
+      <img class="icon" src="img/icon-ship.svg">
+
+      <div class="stats">
+        <div class="stats-item stats-numbers normal medium">{{ data.stats['warships_cutters'] }} <span class="stats-increase bold">{{ data.increase['warships_cutters'] | getLoss }}</span></div>
+
+        <div class="stats-item stats-description small dimmed">{{ "warships_cutters" | translate }}</div>
+
+      </div>
+    </div>
+  </div>
+  <div class = "row">
+    <div class="stats-container">
+
+      <img class="icon" src="img/icon-bpla.svg">
+
+      <div class="stats">
+        <div class="stats-item stats-numbers normal medium">{{ data.stats['uav_systems'] }} <span class="stats-increase bold">{{ data.increase['uav_systems'] | getLoss }}</span></div>
+
+        <div class="stats-item stats-description small dimmed">{{ "uav_systems" | translate }}</div>
+
+      </div>
+    </div>
+    <div class="stats-container">
+
+      <img class="icon" src="img/icon-special.svg">
+
+      <div class="stats">
+        <div class="stats-item stats-numbers normal medium">{{ data.stats['special_military_equip'] }} <span class="stats-increase bold">{{ data.increase['special_military_equip'] | getLoss }}</span></div>
+
+        <div class="stats-item stats-description small dimmed">{{ "special_military_equip" | translate }}</div>
+
+      </div>
+    </div>
+  </div>
+  <div class = "row">
+    <div class="stats-container">
+
+      <img class="icon" src="img/icon-trk.svg">
+
+      <div class="stats">
+        <div class="stats-item stats-numbers normal medium">{{ data.stats['atgm_srbm_systems'] }} <span class="stats-increase bold">{{ data.increase['atgm_srbm_systems'] | getLoss }}</span></div>
+
+        <div class="stats-item stats-description small dimmed">{{ "atgm_srbm_systems" | translate }}</div>
+
+      </div>
+    </div>
+    <div class="stats-container">
+
+      <img class="icon" src="img/icon-rocket.svg">
+
+      <div class="stats">
+        <div class="stats-item stats-numbers normal medium">{{ data.stats['cruise_missiles'] }} <span class="stats-increase bold">{{ data.increase['cruise_missiles'] | getLoss }}</span></div>
+
+        <div class="stats-item stats-description small dimmed">{{ "cruise_missiles" | translate }}</div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+</body>
+</html>

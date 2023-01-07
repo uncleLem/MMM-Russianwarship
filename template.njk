@@ -1,0 +1,174 @@
+<div class="stats-main-container">
+  <div class = "row">
+    <div class="stats-container">
+      {% if display === 'icon' or display === 'both' %}
+        <img class="icon" src="modules/MMM-Russianwarship/img/icon-people.svg">
+      {% endif %}
+      <div class="stats">
+        <div class="stats-item stats-numbers bright medium">{{ data.stats['personnel_units'] }}&nbsp;<span class="stats-increase">{{ data.increase['personnel_units'] | getLoss }}</span></div>
+        {% if display === 'text' or display === 'both' %}
+          <div class="stats-item stats-description small dimmed">{{ "personnel_units" | translate }}</div>
+        {% endif %}
+      </div>
+    </div>
+    {% if stats === 'all' %}
+      <div class="stats-container">
+        {% if display === 'icon' or display === 'both' %}
+          <img class="icon" src="modules/MMM-Russianwarship/img/icon-tank.svg">
+        {% endif %}
+        <div class="stats">
+          <div class="stats-item stats-numbers normal medium">{{ data.stats['tanks'] }}&nbsp;<span class="stats-increase">{{ data.increase['tanks'] | getLoss }}</span></div>
+          {% if display === 'text' or display === 'both' %}
+            <div class="stats-item stats-description small dimmed">{{ "tanks" | translate }}</div>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+  {% if stats === 'all' %}
+  <div class = "row">
+    <div class="stats-container">
+      {% if display === 'icon' or display === 'both' %}
+        <img class="icon" src="modules/MMM-Russianwarship/img/icon-bbm.svg">
+      {% endif %}
+      <div class="stats">
+        <div class="stats-item stats-numbers normal medium">{{ data.stats['armoured_fighting_vehicles'] }}&nbsp;<span class="stats-increase">{{ data.increase['armoured_fighting_vehicles'] | getLoss }}</span></div>
+        {% if display === 'text' or display === 'both' %}
+          <div class="stats-item stats-description small dimmed">{{ "armoured_fighting_vehicles" | translate }}</div>
+        {% endif %}
+      </div>
+    </div>
+    <div class="stats-container">
+      {% if display === 'icon' or display === 'both' %}
+        <img class="icon" src="modules/MMM-Russianwarship/img/icon-art.svg">
+      {% endif %}
+      <div class="stats">
+        <div class="stats-item stats-numbers normal medium">{{ data.stats['artillery_systems'] }}&nbsp;<span class="stats-increase">{{ data.increase['artillery_systems'] | getLoss }}</span></div>
+        {% if display === 'text' or display === 'both' %}
+          <div class="stats-item stats-description small dimmed">{{ "artillery_systems" | translate }}</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class = "row">
+    <div class="stats-container">
+      {% if display === 'icon' or display === 'both' %}
+        <img class="icon" src="modules/MMM-Russianwarship/img/icon-rszv.svg">
+      {% endif %}
+      <div class="stats">
+        <div class="stats-item stats-numbers normal medium">{{ data.stats['mlrs'] }}&nbsp;<span class="stats-increase">{{ data.increase['mlrs'] | getLoss }}</span></div>
+        {% if display === 'text' or display === 'both' %}
+          <div class="stats-item stats-description small dimmed">{{ "mlrs" | translate }}</div>
+        {% endif %}
+      </div>
+    </div>
+    <div class="stats-container">
+      {% if display === 'icon' or display === 'both' %}
+        <img class="icon" src="modules/MMM-Russianwarship/img/icon-ppo.svg">
+      {% endif %}
+      <div class="stats">
+        <div class="stats-item stats-numbers normal medium">{{ data.stats['aa_warfare_systems'] }}&nbsp;<span class="stats-increase">{{ data.increase['aa_warfare_systems'] | getLoss }}</span></div>
+        {% if display === 'text' or display === 'both' %}
+          <div class="stats-item stats-description small dimmed">{{ "aa_warfare_systems" | translate }}</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class = "row">
+    <div class="stats-container">
+      {% if display === 'icon' or display === 'both' %}
+        <img class="icon" src="modules/MMM-Russianwarship/img/icon-plane.svg">
+      {% endif %}
+      <div class="stats">
+        <div class="stats-item stats-numbers normal medium">{{ data.stats['planes'] }}&nbsp;<span class="stats-increase">{{ data.increase['planes'] | getLoss }}</span></div>
+        {% if display === 'text' or display === 'both' %}
+          <div class="stats-item stats-description small dimmed">{{ "planes" | translate }}</div>
+        {% endif %}
+      </div>
+    </div>
+    <div class="stats-container">
+      {% if display === 'icon' or display === 'both' %}
+        <img class="icon" src="modules/MMM-Russianwarship/img/icon-helicopter.svg">
+      {% endif %}
+      <div class="stats">
+        <div class="stats-item stats-numbers normal medium">{{ data.stats['helicopters'] }}&nbsp;<span class="stats-increase">{{ data.increase['helicopters'] | getLoss }}</span></div>
+        {% if display === 'text' or display === 'both' %}
+          <div class="stats-item stats-description small dimmed">{{ "helicopters" | translate }}</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class = "row">
+    <div class="stats-container">
+      {% if display === 'icon' or display === 'both' %}
+        <img class="icon" src="modules/MMM-Russianwarship/img/icon-auto.svg">
+      {% endif %}
+      <div class="stats">
+        <div class="stats-item stats-numbers normal medium">{{ data.stats['vehicles_fuel_tanks'] }}&nbsp;<span class="stats-increase">{{ data.increase['vehicles_fuel_tanks'] | getLoss }}</span></div>
+        {% if display === 'text' or display === 'both' %}
+          <div class="stats-item stats-description small dimmed">{{ "vehicles_fuel_tanks" | translate }}</div>
+        {% endif %}
+      </div>
+    </div>
+    <div class="stats-container">
+      {% if display === 'icon' or display === 'both' %}
+        <img class="icon" src="modules/MMM-Russianwarship/img/icon-ship.svg">
+      {% endif %}
+      <div class="stats">
+        <div class="stats-item stats-numbers normal medium">{{ data.stats['warships_cutters'] }}&nbsp;<span class="stats-increase">{{ data.increase['warships_cutters'] | getLoss }}</span></div>
+        {% if display === 'text' or display === 'both' %}
+          <div class="stats-item stats-description small dimmed">{{ "warships_cutters" | translate }}</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class = "row">
+    <div class="stats-container">
+      {% if display === 'icon' or display === 'both' %}
+        <img class="icon" src="modules/MMM-Russianwarship/img/icon-bpla.svg">
+      {% endif %}
+      <div class="stats">
+        <div class="stats-item stats-numbers normal medium">{{ data.stats['uav_systems'] }}&nbsp;<span class="stats-increase">{{ data.increase['uav_systems'] | getLoss }}</span></div>
+        {% if display === 'text' or display === 'both' %}
+          <div class="stats-item stats-description small dimmed">{{ "uav_systems" | translate }}</div>
+        {% endif %}
+      </div>
+    </div>
+    <div class="stats-container">
+      {% if display === 'icon' or display === 'both' %}
+        <img class="icon" src="modules/MMM-Russianwarship/img/icon-special.svg">
+      {% endif %}
+      <div class="stats">
+        <div class="stats-item stats-numbers normal medium">{{ data.stats['special_military_equip'] }}&nbsp;<span class="stats-increase">{{ data.increase['special_military_equip'] | getLoss }}</span></div>
+        {% if display === 'text' or display === 'both' %}
+          <div class="stats-item stats-description small dimmed">{{ "special_military_equip" | translate }}</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class = "row">
+    <div class="stats-container">
+      {% if display === 'icon' or display === 'both' %}
+        <img class="icon" src="modules/MMM-Russianwarship/img/icon-trk.svg">
+      {% endif %}
+      <div class="stats">
+        <div class="stats-item stats-numbers normal medium">{{ data.stats['atgm_srbm_systems'] }}&nbsp;<span class="stats-increase">{{ data.increase['atgm_srbm_systems'] | getLoss }}</span></div>
+        {% if display === 'text' or display === 'both' %}
+          <div class="stats-item stats-description small dimmed">{{ "atgm_srbm_systems" | translate }}</div>
+        {% endif %}
+      </div>
+    </div>
+    <div class="stats-container">
+      {% if display === 'icon' or display === 'both' %}
+        <img class="icon" src="modules/MMM-Russianwarship/img/icon-rocket.svg">
+      {% endif %}
+      <div class="stats">
+        <div class="stats-item stats-numbers normal medium">{{ data.stats['cruise_missiles'] }}&nbsp;<span class="stats-increase">{{ data.increase['cruise_missiles'] | getLoss }}</span></div>
+        {% if display === 'text' or display === 'both' %}
+          <div class="stats-item stats-description small dimmed">{{ "cruise_missiles" | translate }}</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</div>
